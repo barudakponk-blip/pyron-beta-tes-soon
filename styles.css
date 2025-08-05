@@ -1,0 +1,123 @@
+/* Custom fonts and glow effects for fire theme */
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #0b0c10;
+    color: #e0e0e0;
+}
+.glow-orange {
+    text-shadow:
+        0 0 8px #ff6f00,
+        0 0 15px #ff6f00,
+        0 0 20px #ff6f00,
+        0 0 30px #e65100;
+    color: #ff8f00;
+}
+.glow-blue {
+    text-shadow:
+        0 0 8px #00bcd4,
+        0 0 15px #00bcd4,
+        0 0 20px #00bcd4,
+        0 0 30px #0097a7;
+    color: #4dd0e1;
+}
+.fire-button {
+    background: linear-gradient(45deg, #ff6f00, #ff3d00);
+    box-shadow: 0 0 10px #ff6f00;
+    transition: all 0.3s ease;
+}
+.fire-button:hover {
+    background: linear-gradient(45deg, #ff3d00, #ff6f00);
+    box-shadow: 0 0 20px #ff3d00;
+    transform: scale(1.05);
+}
+/* Card fire images container */
+.card-image {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 15px #ff6f00aa;
+    transition: transform 0.3s ease;
+}
+.card-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #ffab40dd;
+}
+/* Fire-themed container */
+.fire-container {
+    background: radial-gradient(circle at center, #1a1a1a, #0b0c10);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 20px #ff6f0055 inset;
+    margin: 0.75rem;
+    flex: 1 1 250px;
+    max-width: 280px;
+    color: #ffcc80;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.fire-title {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-top: 0.75rem;
+    color: #ff6f00;
+    text-shadow: 0 0 8px #ff6f00bb;
+}
+.fire-description {
+    font-size: 0.9rem;
+    color: #ffcc80aa;
+    margin-top: 0.25rem;
+    flex-grow: 1;
+}
+/* Login/Register Container */
+.auth-container {
+    max-width: 420px;
+    width: 100%;
+    background: #121212dd;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 20px #ff6f0055;
+    margin-top: 4rem;
+}
+input[type="text"], input[type="password"], input[type="email"] {
+    background: #1a1a1a;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    color: #eee;
+    width: 100%;
+    margin-top: 1rem;
+    box-shadow: 0 0 10px #ff6f0044 inset;
+    font-size: 1rem;
+    outline-offset: 3px;
+    transition: outline-color 0.3s ease;
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+    outline: 3px solid #ff6f00;
+    background: #2a2a2a;
+}
+button {
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+.form-switch {
+    color: #ff8f00;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    user-select: none;
+}
+/* Content fade */
+.fade-enter {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+}
